@@ -411,12 +411,11 @@
     font-size: 1.20rem;
     justify-content: center;
   }
-  .contact-bar p { font-weight: 600; font-size: 0.95rem; justify-content: center; }
+  .contact-bar p { font-weight: 600; font-size: 0.95rem; }
   .contact-bar a {
     color: var(--teal-dark);
     text-decoration: none;
     font-weight: 700;
-    justify-content: center;
   }
   .btn-restart {
     background: white;
@@ -538,7 +537,7 @@ const QUESTIONS = [
     options: [
       { label: "Oui mais je ne sais plus où il est", score: "⚠️", comment: "Une fois votre pacte retrouvé, nous pouvons le décortiquer pour vous, en faire une synthèse et nous assurer de son efficacité juridique et de sa complémentarité avec vos statuts." },
       { label: "Oui, c'est mon livre de chevet", score: "✅", comment: "Quel talent ! Si en plus il est efficace juridiquement et sans contradiction avec vos statuts, vous êtes paré à toute éventualité. Pour le vérifier, un audit rapide peut être utile." },
-      { label: "Non", score: "🚨", comment: "Pas de panique, nous pouvons vous accompagner pour créer votre futur pacte !" },
+      { label: "Non", score: "🚨", comment: "Pas de panique, nous pouvons vous accompagner pour créer votre futur pacte  et notamment vous aider à prévoir qui peut racheter les titres, à quel prix et dans quelles conditions—pour éviter les mauvaises surprises entre associés." },
       { label: "C'est en cours... mais pas urgent", score: "⚠️", comment: "Vous êtes un adepte du « jusqu'ici tout va bien ». Pas de panique, nous pouvons reprendre les choses là où elles en sont restées et vous accompagner jusqu'à la finalisation de votre pacte." },
       { label: "Je suis associé(e) unique", score: "✅", comment: "Pour le moment, vous êtes donc seul(e) maître à bord. Cela ne signifie pas pour autant que vous ne faites qu'un(e) avec votre société. Faites attention à ne pas confondre ses poches avec les vôtres et à respecter le formalisme légal notamment en ce qui concerne la fixation de votre rémunération." },
       { label: "Non concerné(e)", score: "👟", comment: "Pas d'inquiétude, ce point ne s'applique pas encore à votre situation." },
@@ -593,17 +592,17 @@ const QUESTIONS = [
     options: [
       { label: "Oui, mais avec un NDA (accord de confidentialité)", score: "✅", comment: "Vous êtes un pro ! Nous pouvons toutefois revoir votre NDA pour nous assurer que les engagements couvrent également la non-sollicitation et le non-débauchage." },
       { label: "Oui, mais ça reste entre nous", score: "🚨", comment: "Vous en êtes certain(e) ? Rassurez-vous, si vos discussions sont en cours, nous pouvons les sécuriser en vous proposant un accord de confidentialité, non-sollicitation et non-débauchage." },
-      { label: "Pas encore, pourquoi ?", score: "⚠️", comment: "Parce qu'en vous en serez là, n'hésitez pas à nous contacter pour que nous vous proposions un accord de confidentialité, non-sollicitation et non-débauchage." },
+      { label: "Pas encore, pourquoi ?", score: "⚠️", comment: "Lorsque vous en serez à ce stade, ne communiquez pas sans protéger votre société et n'hésitez pas à nous contacter pour que nous vous proposions un accord de confidentialité, non-sollicitation et non-débauchage." },
       { label: "Non concerné(e)", score: "👟", comment: "Pas d'inquiétude, ce point ne s'applique pas encore à votre situation." },
     ]
   },
   {
     id: 10,
-    text: "Vous avez déjà parlé d'incentive, BSPCE, BSA, etc. avec vos managers ?",
+    text: "Vous avez déjà parlé d'incentive, BSPCE, BSA, etc. avec vos managers collaborateurs ou partenaires clés ?",
     options: [
       { label: "Oui, mais on fera ça à la levée de fonds", score: "🚨", comment: "Oups, en attendant, vous les privez du gain attendu de ce type de mécanisme. Tant que votre société n'a pas encore été (fortement) valorisée, émettre des BSPCE ou BSA maintenant permet à leurs bénéficiaires d'acquérir demain des actions à la valeur d'aujourd'hui. Contactez-nous !" },
       { label: "C'est plutôt eux qui m'en parlent mais je n'y comprends pas grand-chose", score: "⚠️", comment: "Chacun son métier ! Ces mécanismes sont parfois complexes. Contactez-nous et nous pourrons tout vous expliquer sans jargon et vous proposer un plan sur-mesure." },
-      { label: "Pas encore, c'est grave ?", score: "✅", comment: "Absolument pas ! Surtout si personne ne vous sollicite sur ce sujet. Si toutefois vous souhaitez garder une longueur d'avance, contactez-nous pour tout vous expliquer sans jargon." },
+      { label: "Pas encore, c'est grave ?", score: "✅", comment: "Absolument pas ! Surtout si personne ne vous sollicite sur ce sujet. Si toutefois vous souhaitez garder une longueur d'avance, contactez-nous et nous vous expliquerons tout sans jargon." },
       { label: "Non concerné(e)", score: "👟", comment: "Pas d'inquiétude, ce point ne s'applique pas encore à votre situation." },
     ]
   },

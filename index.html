@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JuriScore – Totum Avocats</title>
+<title>JuriQuizz – Totum Avocats</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -462,12 +462,12 @@
     <p>Révéler les <strong>risques invisibles</strong> dans vos accords, flux financiers, éléments de propriété intellectuelle.</p>
   </div>
   <div class="meta-pills">
-    <span class="meta-pill">⏱ 10 minutes</span>
+    <span class="meta-pill">⏱ 5 minutes</span>
     <span class="meta-pill">💡 100% gratuit</span>
     <span class="meta-pill">🔒 Sans engagement</span>
     <span class="meta-pill">📊 Résultat immédiat</span>
   </div>
-  <button class="btn-start" onclick="startQuiz()">👉 Lancer mon JuriScore</button>
+  <button class="btn-start" onclick="startQuiz()">👉 Lancer mon JuriQuizz</button>
 </section>
 
 <!-- QUIZ -->
@@ -759,7 +759,7 @@ function showResult() {
   const msgGreen = `
     <div class="message-card card-green">
       <h2>🎉 Félicitations ! Votre société est bien structurée</h2>
-      <p>Votre JuriScore montre que votre société est bien structurée sur le plan juridique ! Sa situation est conforme aux attentes habituelles des investisseurs et acquéreurs.</p>
+      <p>Votre JuriQuizz montre que votre société est bien structurée sur le plan juridique ! Sa situation est conforme aux attentes habituelles des investisseurs et acquéreurs.</p>
       <p>Mais saviez-vous que même les sociétés les plus solides peuvent encore optimiser leur préparation ?</p>
       <p><strong>Avec notre réseau de partenaires et de talents, nous pourrions :</strong></p>
       <ul>
@@ -771,7 +771,7 @@ function showResult() {
     </div>`;
   const msgOrange = `
     <div class="message-card card-orange">
-      <h2>⚠️ Votre JuriScore révèle des points à corriger — Agissons ensemble 🤝</h2>
+      <h2>⚠️ Votre JuriQuizz révèle des points à corriger — Agissons ensemble 🤝</h2>
       <p>Votre diagnostic révèle quelques points à corriger pour sécuriser votre société avant une levée de fonds ou une cession.</p>
       <p><strong>Notre solution : le JuriScan !</strong></p>
       <p><em>C'est comme un contrôle technique : on vérifie l'essentiel pour éviter les mauvaises surprises, sans faire une révision complète et coûteuse.</em></p>
@@ -786,7 +786,7 @@ function showResult() {
     </div>`;
   const msgRed = `
     <div class="message-card card-red">
-      <h2>🚨 URGENT : Votre JuriScore révèle des risques critiques — Corrigeons-les ensemble 🤝</h2>
+      <h2>🚨 URGENT : Votre JuriQuizz révèle des risques critiques — Corrigeons-les ensemble 🤝</h2>
       <p>Votre diagnostic révèle des risques dans votre structure juridique. Ces risques peuvent bloquer une levée de fonds, faire échouer une cession ou vous coûter très cher.</p>
       <p><strong>Notre solution : le JuriScan !</strong></p>
       <p><em>C'est comme un contrôle technique : on vérifie l'essentiel pour éviter les mauvaises surprises, sans faire une révision complète et coûteuse.</em></p>
@@ -818,9 +818,9 @@ function showResult() {
         <span style="font-size:2.4rem">${cc.emoji}</span>
       </div>
       <div class="score-label">${labelMap[dominant]}</div>
-      <div class="score-sub">Votre JuriScore a analysé vos 10 réponses. Voici votre diagnostic personnalisé.</div>
+      <div class="score-sub">Votre JuriQuizz a analysé vos 10 réponses. Voici votre diagnostic personnalisé.</div>
       <div class="tally-row">
-        <div class="tally-pill"><span class="score-dot dot-green"></span> ${counts['✅']} Bien structuré</div>
+        <div class="tally-pill"><✅></span> ${counts['✅']} "Bien structuré"</div>
         <div class="tally-pill"><span class="score-dot dot-orange"></span> ${counts['⚠️']} À corriger</div>
         <div class="tally-pill"><span class="score-dot dot-red"></span> ${counts['🚨']} Risque critique</div>
       </div>

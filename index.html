@@ -863,7 +863,10 @@ function showResult() {
   const disclaimer = document.createElement('div');
   disclaimer.style.cssText = 'max-width:740px;margin:32px auto 0;padding:0 24px 40px;';
   disclaimer.innerHTML = '<p style="font-size:0.75rem;color:#999;line-height:1.6;font-style:italic;border-top:1px solid #e0e0e0;padding-top:20px;"><strong>Avertissement et réserve :</strong> Les réponses fournies par le JuriQuizz sont uniquement informatives et illustratives. Elles ne constituent ni un avis, ni un conseil juridique, ni une consultation, ni une recommandation, et n\'engagent en aucune manière la responsabilité de l\'auteur. L\'utilisateur assume l\'entière responsabilité de toute utilisation ou interprétation de ces informations. Pour toute question juridique spécifique, la consultation d\'un avocat ou d\'un professionnel du droit est indispensable. L\'auteur ne garantit ni l\'exhaustivité, ni l\'actualité des réponses, ni leur adéquation à des situations individuelles. Aucune responsabilité ne pourra être retenue en cas d\'utilisation ou d\'interprétation erronée des éléments proposés.</p>';
-  document.body.appendChild(disclaimer);
+  if (!document.getElementById('disclaimer-block')) {
+    disclaimer.id = 'disclaimer-block';
+    document.body.appendChild(disclaimer);
+  }
   
   r.scrollIntoView({ behavior: 'smooth' });
 }

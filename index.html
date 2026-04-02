@@ -853,17 +853,24 @@ function showResult() {
     <div class="recap-title">📋 Détail de vos réponses</div>
     <div class="recap-list">${recapItems}</div>
 
-    <div class="contact-bar">
-      <div>
-        Votre prochaine étape pour passer à l'action en toute confiance ?</p> 
-        </p>Nous contacter </p>
-        <p>📩 <a href="mailto:info@jpdtotum-avocats.com">info@jpdtotum-avocats.com</a> &nbsp;|&nbsp; 📞 <a href="tel:0478471302">06.59.38.30.77</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/totumavocats/" target="_blank">LinkedIn</a></p>
+    <div class="contact-bar" style="flex-direction:row;align-items:center;text-align:center;">
+        <div style="flex:1;">
+        <p style="font-size:1.2rem;font-weight:900;font-family:'Montserrat',sans-serif;color:white;">Votre prochaine étape pour passer à l'action en toute confiance ?</p>
+        <p style="font-size:1rem;font-weight:400;color:white;margin-top:4px;">Nous contacter :</p>
+        <p style="margin-top:12px;">📩 <a href="mailto:info@jpdtotum-avocats.com">info@jpdtotum-avocats.com</a> &nbsp;|&nbsp; 📞 <a href="tel:0478471302">06.59.38.30.77</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/totumavocats/" target="_blank">LinkedIn</a></p>
       </div>
+      <img src="icotype-totum.png" alt="Totum" style="height:90px;margin-left:24px;flex-shrink:0;">
     </div>
 
     <button class="btn-restart" onclick="restart()">↩ Recommencer le questionnaire</button>
   `;
 
+  // Ajouter le disclaimer en bas
+  const disclaimer = document.createElement('div');
+  disclaimer.style.cssText = 'max-width:740px;margin:32px auto 0;padding:0 24px 40px;';
+  disclaimer.innerHTML = '<p style="font-size:0.75rem;color:#999;line-height:1.6;font-style:italic;border-top:1px solid #e0e0e0;padding-top:20px;"><strong>Avertissement et réserve :</strong> Les réponses fournies par le JuriQuizz sont uniquement informatives et illustratives. Elles ne constituent ni un avis, ni un conseil juridique, ni une consultation, ni une recommandation, et n\'engagent en aucune manière la responsabilité de l\'auteur. L\'utilisateur assume l\'entière responsabilité de toute utilisation ou interprétation de ces informations. Pour toute question juridique spécifique, la consultation d\'un avocat ou d\'un professionnel du droit est indispensable. L\'auteur ne garantit ni l\'exhaustivité, ni l\'actualité des réponses, ni leur adéquation à des situations individuelles. Aucune responsabilité ne pourra être retenue en cas d\'utilisation ou d\'interprétation erronée des éléments proposés.</p>';
+  document.body.appendChild(disclaimer);
+  
   r.scrollIntoView({ behavior: 'smooth' });
 }
 
